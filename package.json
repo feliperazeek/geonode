@@ -1,0 +1,15 @@
+{
+  "name"          : "geonode",
+  "description"   : "GeoNode adds geocoding capabilities to Node.js using Google's Geocode API - Geo Spatial is coming out soon",
+  "url"           : "http://geeks.aretotally.in/projects/geonode",
+  "keywords"      : [],
+  "author"        : "Felipe Oliveira <felipera@gmail.com>",
+  "contributors"  : [],
+  "licenses"      : ["MIT"],
+  "dependencies"  : [],
+  "lib"           : "lib",
+  "main"          : "./lib/geonode",
+  "version"       : "0.0.1",
+  "directories"   : { "test": "./test" },
+  "engines"       : { "node": ">= 0.3.0" }
+}
