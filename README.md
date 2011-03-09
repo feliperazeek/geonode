@@ -15,7 +15,3 @@ GeoNode adds very basic, but simple to use, geocoding capabilities to Node.js us
 			console.log("Longitude: " + longitude);
 		});
 
-
-## More Info
-
-http://geeks.aretotally.in/projects/geonode
