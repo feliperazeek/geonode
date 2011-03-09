@@ -1,4 +1,4 @@
-# GeoNode for Node.js (http://geeks.aretotally.in/projects/geonode)
+# GeoNode for Node.js
 by Felipe Oliveira (http://twitter.com/_felipera)
 
 GeoNode adds very basic, but simple to use, geocoding capabilities to Node.js using Google's Geocode API - Geo Spatial is coming out soon.
@@ -14,3 +14,8 @@ GeoNode adds very basic, but simple to use, geocoding capabilities to Node.js us
 			console.log("Latitude: " + latitude);
 			console.log("Longitude: " + longitude);
 		});
+
+
+## More Info
+
+http://geeks.aretotally.in/projects/geonode
