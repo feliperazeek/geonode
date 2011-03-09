@@ -9,7 +9,7 @@
   "dependencies"  : [],
   "lib"           : "lib",
   "main"          : "./lib/geo",
-  "version"       : "0.0.2",
+  "version"       : "0.0.1",
   "directories"   : { "test": "./test" },
   "engines"       : { "node": ">= 0.3.0" }
 }
