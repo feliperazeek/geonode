@@ -1,8 +1,7 @@
 # GeoNode
-# by Felipe Oliveira
-# March 2011
-# [http://geeks.aretotally.in/projects/geonode] (http://geeks.aretotally.in/projects/geonode)
-# [http://twitter.com/_felipera] (http://twitter.com/_felipera)
+by Felipe Oliveira
+[http://geeks.aretotally.in/projects/geonode] (http://geeks.aretotally.in/projects/geonode)
+[http://twitter.com/_felipera] (http://twitter.com/_felipera)
 
 GeoNode adds very basic, but simple to use, geocoding capabilities to Node.js using Google's Geocode API - Geo Spatial is coming out soon.
 
