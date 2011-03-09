@@ -9,7 +9,7 @@
   "dependencies"  : [],
   "lib"           : "lib",
   "main"          : "./lib/geonode",
-  "version"       : "0.0.1",
+  "version"       : "0.0.2",
   "directories"   : { "test": "./test" },
   "engines"       : { "node": ">= 0.3.0" }
 }
