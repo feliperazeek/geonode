@@ -3,9 +3,17 @@ by Felipe Oliveira (http://twitter.com/_felipera)
 
 Geo is a very basic, but simple, geocode library for Node.js using Google's Geocode API (V3) - Geo Spatial features are coming out soon.
 
+
+
+## Installation
+
+		npm install geo
+
+
+
 ## Usage
 
-		var geo = require('../lib/geo');
+		var geo = require('geo');
 		
 		var address = '885 6th Ave #15D New York, NY 10001';
 		var sensor = false;
