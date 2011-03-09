@@ -1,6 +1,6 @@
 {
   "name"          : "geonode",
-  "description"   : "GeoNode adds geocoding capabilities to Node.js using Google's Geocode API - Geo Spatial is coming out soon",
+  "description"   : "GeoNode is a basic, but simple, geocode library for Node.js - Geo Spatial capability hopefully is coming out soon",
   "url"           : "http://geeks.aretotally.in/projects/geonode",
   "keywords"      : [],
   "author"        : "Felipe Oliveira <felipera@gmail.com>",

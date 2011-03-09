@@ -1,7 +1,7 @@
 # GeoNode for Node.js
 by Felipe Oliveira (http://twitter.com/_felipera)
 
-GeoNode adds very basic, but simple to use, geocoding capabilities to Node.js using Google's Geocode API - Geo Spatial is coming out soon.
+GeoNode is a basic, but simple, geocode library for Node.js using Google's Geocode API (V3) - Geo Spatial capability hopefully is coming out soon.
 
 ## Usage
 
