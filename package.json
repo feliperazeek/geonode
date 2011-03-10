@@ -1,10 +1,14 @@
 {
   "name"          : "geo",
   "description"   : "Geo is a very basic, but simple, geocode library for Node.js - Geo Spatial features are coming out soon",
-  "url"           : "http://geeks.aretotally.in/projects/geonode",
+  "homepage"      : "http://geeks.aretotally.in/projects/geonode",
   "keywords"      : [],
   "author"        : "Felipe Oliveira <felipera@gmail.com>",
   "contributors"  : [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:feliperazeek/geonode.git"
+  },
   "licenses"      : ["MIT"],
   "dependencies"  : [],
   "lib"           : "lib",
