@@ -1,7 +1,7 @@
 # Geo for Node.js
 by Felipe Oliveira (http://twitter.com/_felipera)
 
-Geo is a very basic, but simple, geocode library for Node.js using Google's Geocode API (V3) - Geo Spatial features are coming out soon.
+Geo is a very basic, but simple, geo library for Node.js using Google's Geocode API (V3) for Geocoding and GeoHash for GeoSpatial support.
 
 
 
@@ -11,7 +11,7 @@ Geo is a very basic, but simple, geocode library for Node.js using Google's Geoc
 
 
 
-## Usage
+## Usage - Geocode
 
 		var geo = require('geo');
 		
@@ -22,4 +22,35 @@ Geo is a very basic, but simple, geocode library for Node.js using Google's Geoc
 			console.log("Latitude: " + latitude);
 			console.log("Longitude: " + longitude);
 		});
+		
 
+		
+## Usage - GeoHash
+
+		// First define a model instance
+		var model = {'address': '885 6th #15D, New York, NY 10001', 'baths': '1', 'beds': '1'};
+	
+		// Define callback that gets the location (from a single field, multiple fields, whatever) from the model instance (model can be anything, DB class, JSON, array)
+		var locationGetterCallback = function(model) { return model['address']; };
+	
+		// Define callback that will augment the model instance with geo information such as latitude, longitude and geohash
+		var geoSetterCallback = function(model, latitude, longitude, hash, callback) { 
+			console.log('Geo Hash: ' + hash); 
+			model['latitude'] = latitude; 
+			model['longitude'] = longitude; 
+			model['geohash'] = hash; 
+			callback( model ); 
+		};
+	
+		// Now let's see what happens with the model
+		geo.geomodel(model, locationGetterCallback, geoSetterCallback, function(model) {
+			console.log("Model: " + model['address'] + ', Geo: ' + model['geohash']);
+		}); 
+
+
+
+## More Information on GeoHash
+
+1. See it in action at http://openlocation.org/geohash/geohash-js/.
+
+2. Go understand how it works at http://en.wikipedia.org/wiki/Geohash and http://hitching.net/2009/11/10/scalable-fast-accurate-geo-apps-using-google-app-engine-geohash-faultline-correction/.

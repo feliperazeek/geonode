@@ -2,7 +2,7 @@
   "name"          : "geo",
   "description"   : "Geo is a very basic, but simple and extendable, geocode library for Node.js. Currently it only supports Google's Geocode API (v3) - Geo Spatial features are coming out soon",
   "homepage"      : "http://geeks.aretotally.in/projects/geonode",
-  "keywords"      : [],
+  "keywords"      : ["geo", "geospatial", "geocode", "geocoding", "geohash"],
   "author"        : "Felipe Oliveira <felipera@gmail.com>",
   "contributors"  : [],
   "repository": {
@@ -10,10 +10,14 @@
     "url": "git@github.com:feliperazeek/geonode.git"
   },
   "licenses"      : ["MIT"],
-  "dependencies"  : [],
+  "dependencies"  : ["geohash"],
   "lib"           : "lib",
   "main"          : "./lib/geo",
-  "version"       : "0.0.1",
+  "version"       : "0.0.3",
   "directories"   : { "test": "./test" },
-  "engines"       : { "node": ">= 0.3.0" }
+  "engines"       : { "node": ">= 0.3.0" },
+  "licenses": [{
+     "type": "GPLv3",
+     "url": "http://www.gnu.org/licenses/gpl-3.0.txt"}
+   ]
 }
