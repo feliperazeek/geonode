@@ -23,7 +23,13 @@ Geo is a very basic, but simple, geo library for Node.js using Google's Geocode 
 			console.log("Longitude: " + longitude);
 		});
 		
-
+		// Reverse Geocoding also works
+		var latlong = { 'latitude': 52.5112, 'longitude': 13.45155};
+		geo.geocoder(geo.google, latlong, sensor, function(formattedAddress, latitude, longitude) {
+			console.log("Formatted Address: " + formattedAddress);
+			console.log("Latitude: " + latitude);
+			console.log("Longitude: " + longitude);
+		});
 		
 ## Usage - GeoHash
 
