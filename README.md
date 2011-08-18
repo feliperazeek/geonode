@@ -14,44 +14,48 @@ Geo is a very basic, but simple, geo library for Node.js using Google's Geocode 
 ## Usage - Geocode
 
 		var geo = require('geo');
-		
+
 		var address = '885 6th Ave #15D New York, NY 10001';
 		var sensor = false;
-		geo.geocoder(geo.google, address, sensor, function(formattedAddress, latitude, longitude) {
+		geo.geocoder(geo.google, address, sensor,
+		function(formattedAddress, latitude, longitude, details) {
 			console.log("Formatted Address: " + formattedAddress);
 			console.log("Latitude: " + latitude);
 			console.log("Longitude: " + longitude);
+                        console.log("Address details:", details);
 		});
-		
+
 		// Reverse Geocoding also works
 		var latlong = { 'latitude': 52.5112, 'longitude': 13.45155};
-		geo.geocoder(geo.google, latlong, sensor, function(formattedAddress, latitude, longitude) {
+		geo.geocoder(geo.google, latlong, sensor,
+		function(formattedAddress, latitude, longitude, details) {
 			console.log("Formatted Address: " + formattedAddress);
 			console.log("Latitude: " + latitude);
 			console.log("Longitude: " + longitude);
+                        console.log("Address details:", details);
 		});
-		
+
 ## Usage - GeoHash
 
 		// First define a model instance
 		var model = {'address': '885 6th #15D, New York, NY 10001', 'baths': '1', 'beds': '1'};
-	
+
 		// Define callback that gets the location (from a single field, multiple fields, whatever) from the model instance (model can be anything, DB class, JSON, array)
 		var locationGetterCallback = function(model) { return model['address']; };
-	
+
 		// Define callback that will augment the model instance with geo information such as latitude, longitude and geohash
-		var geoSetterCallback = function(model, latitude, longitude, hash, callback) { 
-			console.log('Geo Hash: ' + hash); 
-			model['latitude'] = latitude; 
-			model['longitude'] = longitude; 
-			model['geohash'] = hash; 
-			callback( model ); 
+		var geoSetterCallback = function(model, latitude, longitude, hash, callback) {
+			console.log('Geo Hash: ' + hash);
+			model['latitude'] = latitude;
+			model['longitude'] = longitude;
+			model['geohash'] = hash;
+			callback( model );
 		};
-	
+
 		// Now let's see what happens with the model
 		geo.geomodel(model, locationGetterCallback, geoSetterCallback, function(model) {
 			console.log("Model: " + model['address'] + ', Geo: ' + model['geohash']);
-		}); 
+		});
 
 
 
