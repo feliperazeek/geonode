@@ -10,7 +10,10 @@
     "url": "git@github.com:feliperazeek/geonode.git"
   },
   "licenses"      : ["MIT"],
-  "dependencies"  : ["geohash"],
+  "dependencies": {
+    "geohash": "0.0.x",
+    "shred": "0.7.x"
+  },
   "lib"           : "lib",
   "main"          : "./lib/geo",
   "version"       : "0.0.3",
