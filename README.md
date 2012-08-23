@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/feliperazeek/geonode.png)](http://travis-ci.org/feliperazeek/geonode)
 # Geo for Node.js
 by Felipe Oliveira (http://twitter.com/_felipera)
 
